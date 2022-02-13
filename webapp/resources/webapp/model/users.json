@@ -1,0 +1,132 @@
+{
+	"users":[
+		{
+			"name":"Roshan Kamble",
+			"email":"roshan.kamble@bristlecone.com",
+			"role":"Associate Consultant",
+			"password":"bcone@123"
+		},
+		
+		{
+			"name":"Poonam Samb",
+			"email":"poonam.samb@bristlecone.com",
+			"role":"Associate Principal",
+			"password":"bcone@123"
+		},
+		
+		{
+			"name":"Chetan Krishna",
+			"email":"chetan.krishna@bristlecone.com",
+			"role":"Principal",
+			"password":"bcone@123"
+		},
+		
+		{
+			"name":"Manohar Singh",
+			"email":"manohar.singh@bristlecone.com",
+			"role":"Principal",
+			"password":"bcone@123"
+		}
+		
+		],
+	
+	"requestStatus" : [
+		"-",
+		"Open",
+		"Approved",
+		"Denied",
+		"Closed"
+	],
+
+	"access" : [
+		"Unavilable",
+		"Available"
+	],
+
+	"services" : [
+		{
+			"name":"A21  S/4 HANA 1610  ALINHANA9",
+			"access": "Unavailable",
+			"requestStatus": "-",
+			"note":"In progress"
+		},
+
+		{
+			"name":"B01  BO 4.2 SP07  AWINBOBJ",
+			"access": "Unavailable",
+			"requestStatus": "Open",
+			"note":"In progress"
+		},
+
+		{
+			"name":"D01  ECC 6.0 Development (Main)  AWIND01",
+			"access": "Unavailable",
+			"requestStatus": "-",
+			"note":"In progress"
+		},
+
+		{
+			"name":"HDX  Standalone HANA 2.0 (XSA System)  ALINHANA25",
+			"access": "Unavailable",
+			"requestStatus": "-",
+			"note":"In progress"
+		},
+
+		{
+			"name":"HN4  ECC 6.0 EhP7 (Milk Solution)  ALINHANA3",
+			"access": "Unavailable",
+			"requestStatus": "-",
+			"note":"In progress"
+		},
+
+		{
+			"name":"IDE  ECC 6.0 EhP7 (IDES)  AWINSCE1",
+			"access": "Available",
+			"requestStatus": "Closed",
+			"note":"In progress"
+		},
+
+		{
+			"name":"S21  S/4 HANA 1909  ALINHANA21",
+			"access": "Available",
+			"requestStatus": "Closed",
+			"note":"In progress"
+		},
+
+		{
+			"name":"PS2  S/4 HANA 1909  ALINPS2",
+			"access": "Denied",
+			"requestStatus": "Closed",
+			"note":"In progress"
+		},
+
+		{
+			"name":"SMP  Solution Manager 7.2  AWINSMP",
+			"access": "Unavailable",
+			"requestStatus": "Open",
+			"note":"In progress"
+		},
+
+		{
+			"name":"T01  ECC 6.0 Quality (Main)  AWINT01",
+			"access": "Unavailable",
+			"requestStatus": "Approved",
+			"note":"In progress"
+		},
+
+		{
+			"name":"S41  S/4 HANA 1909 FPS03 (Demo21)  ALINHANA01",
+			"access": "Unavailable",
+			"requestStatus": "Denied",
+			"note":"In progress"
+		},
+
+		{
+			"name":"S22  BW 7.5 on HANA  ALINHANA22",
+			"access": "Unavailable",
+			"requestStatus": "-",
+			"note":"In progress"
+		}
+
+	]
+}

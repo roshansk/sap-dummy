@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns="sap.m" controllerName="UI5_webapp.webapp.controller.Index" displayBlock="true">
+    <Shell id="shell">
+        <App id="app">
+            <pages>
+                <Page title="{i18n>title}">
+                    <headerContent>
+                    </headerContent>
+                        <content>
+                            <form:SimpleForm editable="true" layout="ResponsiveGridLayout" xmlns:sap.ui.core="sap.ui.core" id="login">
+                                <form:content >
+                                    <sap.ui.core:Title  text="Login" id="formTitle"/>
+                                        <layout:VerticalLayout >
+                                            <Label text="Email"  id="lable-email"/>
+                                            <Input type="Email"  value="{oLocal>/login/email}"  valueLiveUpdate="true" width="60%" id="email"/>
+                                            <Label text="Password" id="label-Password"/>
+                                            <Input type="Password" value="{oLocal>/login/password}"  valueLiveUpdate="true" width="60%" id="password"/>
+                                            <Button type="Accept" id="submit" text="Login" width="auto" press="login" />
+                                            <layout:HorizontalLayout>
+                                                <Label text="Don`t have an account? register here -" class="sapUiResponsiveMargin " />
+                                                <Button text="Register" id="register" width="auto" press="goToRegister" />
+                                            </layout:HorizontalLayout> 
+                                        </layout:VerticalLayout> 
+                                </form:content>
+                                </form:SimpleForm>  
+                        </content>
+                </Page>
+            </pages>
+        </App>
+    </Shell>
+</mvc:View>

@@ -1,0 +1,64 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns:layout="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="UI5_webapp.webapp.controller.Index" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Panel headerText="User Details">
+							<layout:VerticalLayout>
+								<Text text="{oLocal>/userInSession/name}" />
+								<Text text="Email - {oLocal>/userInSession/email}" />
+								<Text text="Designation - {oLocal>/userInSession/role}" />
+							</layout:VerticalLayout>
+						</Panel>
+						<Table
+							id="serviceTable"
+							inset="false"
+							items="{user>/services}"
+							class="sapUiLargeMarginTopBottom"
+							alternateRowColors="true">
+							<infoToolbar>
+								<OverflowToolbar>
+									<Label text="Services"/>
+								</OverflowToolbar>
+							</infoToolbar>
+							<columns>
+								<Column>
+									<Text text="Name" />
+								</Column>
+								<Column>
+									<Text text="Access" />
+								</Column>
+								<Column>
+									<Text text="Request Status" />
+								</Column>
+								<Column>
+									<Text text="Note" />
+								</Column>
+								<Column>
+									<Text text="Action" />
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem vAlign="Middle">
+									<cells>
+										<ObjectIdentifier
+											title="{user>name}"
+											text=""/>
+										<Text
+											text="{user>access}" />
+										<Text
+											text="{user>requestStatus}" />
+										<Text
+											text="{user>note}" />
+										<Button text="Request Access" type="Emphasized" />
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

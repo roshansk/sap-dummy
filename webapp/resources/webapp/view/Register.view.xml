@@ -1,0 +1,31 @@
+<mvc:View xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form"  controllerName="UI5_webapp.webapp.controller.Index" displayBlock="true">
+    <Shell id="shell">
+        <Page title="{i18n>title}">
+        <content>
+            <form:SimpleForm editable="true" layout="ResponsiveGridLayout" xmlns:sap.ui.core="sap.ui.core" id="login">
+                <form:content >
+                    <sap.ui.core:Title  text="Register" id="formTitle"/>
+                        <layout:VerticalLayout >
+                            <Label text="Name"  id="lable-name"/>
+                            <Input type="Text"  value="{oLocal>/register/name}"  valueLiveUpdate="true" width="60%" id="name"/>
+                            <Label text="Email"  id="lable-email"/>
+                            <Input type="Email"  value="{oLocal>/register/email}"  valueLiveUpdate="true" width="60%" id="email"/>
+                            <Text text="{oLocal>/registerEmailErr}"/>
+                            <Label text="Password" id="label-Password"/>
+                            <Input type="Password" value="{oLocal>/register/password}"  valueLiveUpdate="true" width="60%" id="password"/>
+                            <Label text="Confirm Password" id="label-Password2"/>
+                            <Input type="Password" value="{oLocal>/register/password2}"  valueLiveUpdate="true" width="60%" id="password2"/>
+                            <Text text="{oLocal>/registerPasswordErr}"/>
+                            <Button type="Accept" id="submit" text="Register" width="auto" press="register" />
+                            <layout:HorizontalLayout>
+                                <Label text="Already have an account? login here -" class="sapUiResponsiveMargin " />
+                                <Button text="login"  width="auto" press="goToLogin" />
+                            </layout:HorizontalLayout> 
+                            <Text text="{oLocal>/registerMsg}"/>
+                        </layout:VerticalLayout> 
+                </form:content>
+            </form:SimpleForm>  
+        </content>
+        </Page>
+    </Shell>
+</mvc:View>

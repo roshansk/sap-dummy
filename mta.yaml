@@ -1,0 +1,9 @@
+ID: Dummy
+_schema-version: '2.1'
+description: Intial project
+version: 0.0.1
+
+modules:
+ - name: webapp
+   type: html5
+   path: webapp
